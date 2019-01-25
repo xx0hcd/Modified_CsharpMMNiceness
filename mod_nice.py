@@ -53,7 +53,8 @@ def injectNiceness(script, nicenessFile, outfile):
     fout.close()
 
 def createNiceness(arch, protocol, lhost, lport, single, encrypt, key, ssl, outfile):
-    msfCall = '../msfvenom'
+    #msfCall should be path to msf5 version of msfvenom
+    msfCall = 'msfvenom'
     msfPayload = 'windows/'
 
     if arch == 'x64':
